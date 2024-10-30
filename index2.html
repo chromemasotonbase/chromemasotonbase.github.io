@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+
+    <title>T-Rex Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="rand2.png" type="image/x-icon">
+
+    <style>
+        body {
+            font-family: "Orbitron", sans-serif;
+            background-color: rgb(0, 0, 0);
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin-left: 0px;
+            margin-right: 0px;
+            margin-top: 0px;
+        }
+
+        li {
+            display: inline-flex;
+            margin-top: auto;
+            margin-bottom: auto;
+            margin-left: 10px;
+        }
+
+        ul {
+            border-style: dotted;
+            border-color: rgb(255, 255, 255);
+            border-radius: 5px;
+            border-width: 2px;
+            background-color: #000000;
+            padding-block: 5px 10px;
+            display: block;
+            padding-left: 0px;
+            margin-left: 10%;
+            margin-right: 10%;
+            margin-top: 0px;
+            border-top: none;
+        }
+
+        .navdiv {
+            font-size: 40px;
+            display: inline-flex;
+            margin-left: auto;
+            margin-right: auto;
+            width: fit-content;
+        }
+
+        .navdivlogo {
+            font-size: 40px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: fit-content;
+        }
+
+        .center {
+
+            color: beige;
+            text-align: center;
+        }
+
+        .topic {
+            font-size: 80px;
+        }
+
+        .topic2 {
+            font-size: 30px;
+            display: block;
+        }
+
+        .topic3 {
+            display: block;
+            width: 70%;
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 30px;
+            display: block;
+        }
+
+        .img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 5%;
+            width: 60%;
+        }
+
+        .img2 {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 6%;
+            width: 60%;
+        }
+
+        .a {
+            padding-block: 5px 10px;
+            border-radius: 10%;
+            background-color: rgba(169, 169, 169, 0);
+            color: beige;
+            text-decoration: none;
+        }
+
+        .navbarlogo {
+            display: inline-flex;
+            width: 4%;
+            margin-right: 10%;
+        }
+
+        .navbartext {
+            display: inline-flex;
+            margin-right: 2%;
+            margin-top: auto;
+            margin-bottom: auto;
+            font-size: 40px;
+            color: ;
+            margin-right: 10%;
+        }
+
+        .button {
+            font-family: "Orbitron", sans-serif;
+            background-color: #ffffff;
+            border: none;
+            color: rgb(0, 0, 0);
+            padding: 15px 32px;
+            text-align: center;
+            display: inline-block;
+            border-radius: 2px;
+            border-color: black;
+            font-size: 35px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-style: solid;
+            border-color: #2019b4;
+            border-radius: 15px;
+            border-width: 4px;
+            margin-top: 2%;
+        }
+
+        .button2 {
+            font-family: "Orbitron", sans-serif;
+            background-color: #ffffff;
+            border: none;
+            color: rgb(0, 0, 0);
+            padding: 5px 16px;
+            text-align: center;
+            display: inline-block;
+            border-radius: 2px;
+            border-color: black;
+            font-size: 18px;
+            cursor: pointer;
+            border-style: solid;
+            border-color: #2019b4;
+            border-radius: 15px;
+            border-width: 6px;
+        }
+
+        .mainpagelayout {
+            text-align: center;
+            display: inline-flex;
+            margin-left: auto;
+            margin-right: auto;
+            position: relative;
+        }
+
+        .mainpagelayoutin {
+            text-align: center;
+            display: block;
+            width: 50%;
+        }
+
+        .mainpageplace {
+            display: block;
+            text-align: center;
+        }
+
+        .mainpageplace2 {
+            display: block;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .iframe {
+            display: block;
+            margin-top: 2%;
+            margin-left: auto;
+            margin-right: auto;
+            height: 800px;
+            width: 1200px;
+        }
+
+        @media only screen and (max-width: 600px) {
+            .topic3 {
+                display: block;
+                width: 90%;
+                margin-left: auto;
+                margin-right: auto;
+                font-size: 12px;
+                display: block;
+                margin-top: 3%
+            }
+
+            .topic {
+                display: block;
+                font-size: 45px;
+                width: 100%;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 0%;
+                margin-bottom: 0%;
+            }
+
+            .topic2 {
+                margin-top: 0%;
+                font-size: 13px;
+            }
+
+            .img {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 2%;
+                width: 65%;
+                margin-bottom: 0%;
+            }
+
+            .img2 {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 6%;
+                width: 70%;
+            }
+
+            .navdiv {
+                font-size: 15px;
+                display: inline-flex;
+                margin-left: auto;
+                margin-right: auto;
+                width: fit-content;
+            }
+
+
+            .navbarlogo {
+                display: inline-flex;
+                width: 15%;
+                margin-right: 2%;
+            }
+
+            .navbartext {
+                display: inline-flex;
+                margin-top: auto;
+                margin-bottom: auto;
+                font-size: 15px;
+                color: rgb(255, 255, 255);
+                margin-right: 2%;
+                margin-left: 0px;
+
+            }
+
+            li {
+                display: inline-flex;
+                margin-top: auto;
+                margin-bottom: auto;
+                margin-left: 5px;
+            }
+
+            .button {
+                font-family: "Orbitron", sans-serif;
+                background-color: blueviolet;
+                border: none;
+                color: rgb(255, 255, 255);
+                padding: 6px 10px;
+                text-align: center;
+                display: inline-block;
+                border-radius: 1px;
+                border-color: black;
+                font-size: 14px;
+                margin: 4px 2px;
+                cursor: pointer;
+                border-style: solid;
+                border-color: rgb(0, 0, 0);
+                border-radius: 5px;
+                border-width: 4px;
+            }
+
+            .mainpagelayout {
+                text-align: center;
+                display: inline;
+                margin-left: auto;
+                margin-right: auto;
+                position: relative;
+            }
+
+            .mainpagelayoutin {
+                width: 80%;
+                text-align: center;
+                display: inline-block;
+            }
+
+            .mainpageplace {
+                display: block;
+                text-align: center;
+            }
+
+            .mainpageplace2 {
+                display: block;
+                text-align: center;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .navbar {
+                display: none;
+            }
+
+            .iframe {
+                margin-top: 5%;
+                height: 450px;
+                width: 100%;
+            }
+
+        }
+
+        .rotate {
+            animation: rotation 8s infinite linear;
+        }
+
+        @keyframes rotation {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(359deg);
+            }
+        }
+
+        @keyframes animate {
+            0% {
+                opacity: 0;
+            }
+
+            50% {
+                opacity: 0.7;
+            }
+
+            100% {
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Nav bar section will probably need more editing, very unstable -->
+
+
+
+    <div class="mainpageplace">
+        <div class="mainpagelayout">
+            <div class="mainpagelayoutin">
+                <img class="img" src="rand2.png"></img>
+            </div>
+            <div class="mainpagelayoutin">
+                <h1 class="center topic">
+                    <font color="#2019b4" style="font-weight: 900;">Blue</font> Trex
+                </h1>
+
+                <div class="center topic2">The game is only playable on desktop chrome, swich to desktop chrome anjoy the based chrome mascot.</div>
+            </div>
+        </div>
+    </div>
+    <div class="mainpageplace">
+        <a href="https://t.me/"><button class="button">Telegram</button></a>
+        <a href="https://twitter.com/"><button class="button">Twitter</button></a>
+    </div>
+
+
+    <div class="dexscreener" id="dexscreener-embed">
+        <iframe class="iframe" src="https://dexscreener.com/base/0xtba?embed=1&theme=dark&info=0">
+        </iframe>
+    </div>
+
+
+
+    <!-- place holde text -->
+    <div class="center topic2"> <br></div>
+    <div class="center topic2"> <br></div>
+    <div class="center topic2">LOCK: 1 Month</div>
+    <div class="center topic2">LOCKED: 97% dev 3%</div>
+    <div class="center topic2">CA OWNERSHIP: RENOUNCED</div>
+    <div class="center topic2">TAX: BOTH ZERO BUY AND SELL</div>
+    <script>
+        function myCopyfunc() {
+            // Copy the text inside the text field
+            navigator.clipboard.writeText("0x0000000");
+
+            // Alert the copied text
+            alert("Copied the text: " + "0x0000000");
+        }
+    </script>
+</body>
+
+</html>
